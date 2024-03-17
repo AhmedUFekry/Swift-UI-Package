@@ -27,5 +27,36 @@ public extension UIButton {
     func setTitleFont(_ font: UIFont?, for state: UIControl.State) {
             titleLabel?.font = font
         }
+    func setTitle(_ title: String?, for state: UIControl.State) {
+            setTitle(title, for: state)
+        }
+        
+        func setTitleFont(_ font: UIFont?, for state: UIControl.State) {
+            titleLabel?.font = font
+        }
+        
+        func setAttributedTitle(_ title: NSAttributedString?, for state: UIControl.State) {
+            setAttributedTitle(title, for: state)
+        }
+        
+        func setTitleColor(_ color: UIColor?, for state: UIControl.State) {
+            setTitleColor(color, for: state)
+        }
+        
+        func setTitleShadowColor(_ color: UIColor?, for state: UIControl.State) {
+            setTitleShadowColor(color, for: state)
+        }
+        
+        func setImage(_ image: UIImage?, for state: UIControl.State) {
+            setImage(image?.withRenderingMode(.alwaysOriginal), for: state)
+        }
+        
+        func setSelectedImage(_ image: UIImage?, for state: UIControl.State) {
+            setImage(image?.withRenderingMode(.alwaysOriginal), for: state)
+        }
+        
+        func setBackgroundImage(_ image: UIImage?, for state: UIControl.State) {
+            setBackgroundImage(image?.withRenderingMode(.alwaysOriginal), for: state)
+        }
     
 }
